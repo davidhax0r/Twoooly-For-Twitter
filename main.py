@@ -35,3 +35,17 @@ class Twooly(object):
             else:
                 print "-" * 30
                 print "He is following you.."
+
+    def clear_timeline(self):
+        print "Getting all tweets....."
+        self.timeline_tweets = self.twitter.user_timeline(count = 300) #350 is the limit of tweets/hour
+        print "Found: %d" % (len(self.timeline_tweets))
+        print "Removing, please wait..."
+        for t in self.timeline_tweets:
+            self.twitter.destroy_status(t.id)
+        print "Done"
+
+    def send_msg_followers(self):
+        self.followers = self.twitter.followers_ids(self.name)
+        for line in self.followers:
+            print line
