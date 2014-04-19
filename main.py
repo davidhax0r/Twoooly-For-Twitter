@@ -44,8 +44,3 @@ class Twooly(object):
         for t in self.timeline_tweets:
             self.twitter.destroy_status(t.id)
         print "Done"
-
-    def send_msg_followers(self):
-        self.followers = self.twitter.followers_ids(self.name)
-        for line in self.followers:
-            print line

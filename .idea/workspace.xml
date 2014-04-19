@@ -26,7 +26,7 @@
       <file leaf-file-name="setup.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="7" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+            <state line="9" column="0" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="45" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.88590604" vertical-offset="0" max-vertical-offset="896">
+            <state line="46" column="0" selection-start="1711" selection-end="1711" vertical-scroll-proportion="0.7544757" vertical-offset="441" max-vertical-offset="832">
               <folding />
             </state>
           </provider>
@@ -87,6 +87,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -107,7 +108,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,6 +316,20 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="7" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="45" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="896">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="7" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <folding />
         </state>
@@ -330,14 +344,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+        <state line="9" column="0" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="45" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.88590604" vertical-offset="0" max-vertical-offset="896">
+        <state line="46" column="0" selection-start="1711" selection-end="1711" vertical-scroll-proportion="0.7544757" vertical-offset="441" max-vertical-offset="832">
           <folding />
         </state>
       </provider>
