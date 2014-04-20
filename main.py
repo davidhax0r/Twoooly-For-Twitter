@@ -26,7 +26,7 @@ class Twooly(object):
     def auto_unfollow(self):
         self.followers = self.twitter.followers_ids(self.name)
         self.following = self.twitter.friends_ids(self.name)
-
+        print 'Setting up....'
         for each_friend in self.following:
             if each_friend not in self.followers:
                 self.twitter.destroy_friendship(each_friend)
@@ -36,11 +36,30 @@ class Twooly(object):
                 print "-" * 30
                 print "He is following you.."
 
-    def clear_timeline(self):
+    def clear_timeline(self,count = 100):
         print "Getting all tweets....."
-        self.timeline_tweets = self.twitter.user_timeline(count = 300) #350 is the limit of tweets/hour
+        self.timeline_tweets = self.twitter.user_timeline(count = count) #350 is the limit of tweets/hour
         print "Found: %d" % (len(self.timeline_tweets))
         print "Removing, please wait..."
         for t in self.timeline_tweets:
             self.twitter.destroy_status(t.id)
         print "Done"
+
+    def favorite_tweets(self,hashtag,num_of_tweets = 10):
+        search = '#'+hashtag
+        cursor = tweepy.Cursor(self.twitter.search,q=search,lang='en').items(int(num_of_tweets))
+        print 'Please wait while the tweets are fetched......'
+        print 'It might take some time....'
+        for each_tweet in cursor:
+            self.twitter.create_favorite(each_tweet.id)
+        print 'Done, go check it out...'
+
+    def retweet_tweets(self,hashtag,num_of_tweets = 10):
+        search = '#'+hashtag
+        cursor = tweepy.Cursor(self.twitter.search,q=search,lang='en').items(int(num_of_tweets))
+        print 'Please wait while the tweets are fetched......'
+        print 'It might take some time....'
+        for each_tweet in cursor:
+            self.twitter.retweet(each_tweet.id)
+            print each_tweet.id
+        print 'Done, go check it out...'
