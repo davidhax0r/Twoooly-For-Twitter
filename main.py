@@ -81,12 +81,4 @@ class Twoooly(object):
         print "-" * 35
         print 'DONE Following'
 
-    def create_list_of_user_with_tweets(self,search,list_name,num_of_users = 10):
-        search = '#'+search
-        cursor = tweepy.Cursor(self.twitter.search,q=search,lang='en').items(int(num_of_users))
-        try:
-            self.twitter.create_list(list_name,'My List')
-        except tweepy.TweepError:
-            print 'An Error Has Occured'
-        for each_tweet in cursor:
-            self.twitter.add_list_member()
+
